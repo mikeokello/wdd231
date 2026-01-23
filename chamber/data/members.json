@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Alpha Traders Ltd",
+      "address": "Kampala Road, Uganda",
+      "phone": "+256 701 111111",
+      "website": "https://alphatraders.com",
+      "image": "member1.jpg",
+      "level": "Gold"
+    },
+    {
+      "name": "Bright Tech Solutions",
+      "address": "Ntinda, Kampala",
+      "phone": "+256 702 222222",
+      "website": "https://brighttech.com",
+      "image": "member2.jpg",
+      "level": "Silver"
+    },
+    {
+      "name": "City Fresh Foods",
+      "address": "Wandegeya",
+      "phone": "+256 703 333333",
+      "website": "https://cityfresh.com",
+      "image": "member3.jpg",
+      "level": "Member"
+    },
+    {
+      "name": "Delta Construction",
+      "address": "Makindye",
+      "phone": "+256 704 444444",
+      "website": "https://deltaconstruction.com",
+      "image": "member4.jpg",
+      "level": "Gold"
+    },
+    {
+      "name": "Eco Green Energy",
+      "address": "Najjera",
+      "phone": "+256 705 555555",
+      "website": "https://ecogreen.com",
+      "image": "member5.jpg",
+      "level": "Silver"
+    },
+    {
+      "name": "Future Finance Ltd",
+      "address": "Kololo",
+      "phone": "+256 706 666666",
+      "website": "https://futurefinance.com",
+      "image": "member6.jpg",
+      "level": "Member"
+    },
+    {
+      "name": "Global Logistics",
+      "address": "Industrial Area",
+      "phone": "+256 707 777777",
+      "website": "https://globallogistics.com",
+      "image": "member7.jpg",
+      "level": "Gold"
+    }
+  ]
+}

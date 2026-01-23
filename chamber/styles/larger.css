@@ -1,0 +1,52 @@
+@media (min-width: 768px) {
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+
+  .navigation li {
+    border: none;
+  }
+
+  .navigation a {
+    padding: 0.75rem 1.2rem;
+  }
+
+  .hero {
+    height: 380px;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  #members.grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  #members.list .member-card {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  #members.list .member-logo {
+    margin-bottom: 0;
+  }
+}
