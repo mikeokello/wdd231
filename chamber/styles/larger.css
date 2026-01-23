@@ -42,11 +42,12 @@
 
   #members.list .member-card {
     display: flex;
-    gap: 1.5rem;
     align-items: center;
+    gap: 1.5rem;
   }
 
   #members.list .member-logo {
     margin-bottom: 0;
+    flex-shrink: 0;
   }
 }
