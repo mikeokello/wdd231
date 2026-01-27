@@ -5,7 +5,7 @@
       "address": "Kampala Road, Uganda",
       "phone": "+256 701 111111",
       "website": "https://alphatraders.com",
-      "image": "member1.jpg",
+      "image": "alpha.webp",
       "level": "Gold"
     },
     {
@@ -13,7 +13,7 @@
       "address": "Ntinda, Kampala",
       "phone": "+256 702 222222",
       "website": "https://brighttech.com",
-      "image": "member2.jpg",
+      "image": "bright.webp",
       "level": "Silver"
     },
     {
@@ -21,7 +21,7 @@
       "address": "Wandegeya",
       "phone": "+256 703 333333",
       "website": "https://cityfresh.com",
-      "image": "member3.jpg",
+      "image": "city.webp",
       "level": "Member"
     },
     {
@@ -29,7 +29,7 @@
       "address": "Makindye",
       "phone": "+256 704 444444",
       "website": "https://deltaconstruction.com",
-      "image": "member4.jpg",
+      "image": "delta.webp",
       "level": "Gold"
     },
     {
@@ -37,7 +37,7 @@
       "address": "Najjera",
       "phone": "+256 705 555555",
       "website": "https://ecogreen.com",
-      "image": "member5.jpg",
+      "image": "eco.webp",
       "level": "Silver"
     },
     {
@@ -45,7 +45,7 @@
       "address": "Kololo",
       "phone": "+256 706 666666",
       "website": "https://futurefinance.com",
-      "image": "member6.jpg",
+      "image": "future.webp",
       "level": "Member"
     },
     {
@@ -53,7 +53,7 @@
       "address": "Industrial Area",
       "phone": "+256 707 777777",
       "website": "https://globallogistics.com",
-      "image": "member7.jpg",
+      "image": "global.webp",
       "level": "Gold"
     }
   ]
