@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Kampala Chamber</title>
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <h1>Thank You</h1>
+  </div>
+</header>
+
+<main class="card thankyou-card">
+  <h2>Application Received</h2>
+  <p>Thank you for applying to join the Kampala Chamber of Commerce.</p>
+
+  <div class="submitted-data">
+    <p><strong>First Name:</strong> <span id="fname"></span></p>
+    <p><strong>Last Name:</strong> <span id="lname"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Mobile Phone:</strong> <span id="phone"></span></p>
+    <p><strong>Business Name:</strong> <span id="business"></span></p>
+    <p><strong>Submitted On:</strong> <span id="timestamp"></span></p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>© <span id="year"></span> Kampala Chamber of Commerce</p>
+  </div>
+</footer>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+["fname","lname","email","phone","business","timestamp"]
+  .forEach(id => document.getElementById(id).textContent = params.get(id));
+</script>
+
+</body>
+</html>

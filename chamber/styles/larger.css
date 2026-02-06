@@ -1,23 +1,59 @@
-@media (min-width:768px) {
+@media (min-width: 768px) {
 
-  #menu { display:none; }
+  /* Hide hamburger on larger screens */
+  #menu {
+    display: none;
+  }
 
+  /* Show navigation horizontally */
   .navigation {
-    display:flex;
-    gap:1rem;
-    background:none;
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background: none;
+    gap: 1rem;
   }
 
+  .navigation li {
+    border: none;
+  }
+
+  .navigation a {
+    padding: 0.5rem 1rem;
+  }
+
+  /* MAIN CONTENT MAX WIDTH */
   main {
-    max-width:1200px;
-    margin:auto;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
   }
 
+  /* GRID LAYOUTS */
   .grid {
-    grid-template-columns:repeat(3,1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
 
   .discover-grid {
-    grid-template-columns:repeat(4,1fr);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .membership-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  /* FORM AND ASIDE LAYOUT */
+  .join-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
   }
 }
