@@ -1,216 +1,101 @@
 :root {
-  --primary: #003366;
-  --secondary: #0055aa;
-  --light-bg: #f4f6f9;
-  --card-bg: #ffffff;
-  --text-dark: #333;
-  --text-muted: #555;
+  --primary:#003366;
+  --light:#ffffff;
+  --bg:#f4f6f9;
 }
 
-/* ================= RESET ================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { box-sizing:border-box; margin:0; padding:0; }
 
-/* ================= BASE ================= */
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  background-color: var(--light-bg);
-  color: var(--text-dark);
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
 }
 
-/* ================= HEADER & NAV ================= */
-header {
-  background-color: var(--primary);
-  color: #ffffff;
+.site-header {
+  background: var(--primary);
+  color: white;
   padding: 1rem;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 1.4rem;
-}
-
-nav {
-  margin-top: 0.5rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
 #menu {
-  background: none;
-  border: none;
   font-size: 1.8rem;
-  color: #ffffff;
-  cursor: pointer;
+  background:none;
+  border:none;
+  color:white;
+  cursor:pointer;
 }
 
 .navigation {
-  list-style: none;
-  display: none;
-  flex-direction: column;
-  margin-top: 1rem;
+  display:none;
+  list-style:none;
+  background: var(--primary);
 }
 
 .navigation.show {
-  display: flex;
-}
-
-.navigation li {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display:flex;
+  flex-direction:column;
 }
 
 .navigation a {
-  display: block;
-  padding: 0.75rem;
-  color: #ffffff;
-  text-decoration: none;
+  color:white;
+  text-decoration:none;
+  padding:1rem;
 }
 
-.navigation a:hover,
-.navigation a:focus {
-  background-color: var(--secondary);
-}
-
-/* ================= HERO ================= */
 .hero {
-  position: relative;
-  height: 260px;
-  overflow: hidden;
+  position:relative;
+  height:260px;
 }
 
-.hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.hero img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
 
 .hero-text {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
+  position:absolute;
+  inset:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:rgba(0,0,0,.5);
+  color:white;
 }
 
-.hero-text h2 {
-  color: #ffffff;
-  font-size: 1.4rem;
-}
-
-.hero-text p {
-  color: #eeeeee;
-  margin-top: 0.5rem;
-}
-
-/* ================= MAIN ================= */
 main {
-  padding: 1.5rem 1rem;
+  padding:1rem;
 }
 
-.view-controls h2 {
-  margin-bottom: 0.5rem;
+.card {
+  background:white;
+  padding:1rem;
+  border-radius:8px;
+  margin-bottom:1rem;
 }
 
-.view-controls p {
-  margin-bottom: 1rem;
-  color: var(--text-muted);
+.grid {
+  display:grid;
+  gap:1rem;
 }
 
-.view-buttons {
-  display: flex;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
+.discover-grid {
+  display:grid;
+  gap:1rem;
 }
 
-.view-buttons button {
-  flex: 1;
-  padding: 0.6rem;
-  border: none;
-  background-color: var(--primary);
-  color: #ffffff;
-  border-radius: 4px;
-  cursor: pointer;
+img {
+  max-width:100%;
+  display:block;
+  border-radius:6px;
 }
 
-.view-buttons button:hover {
-  background-color: var(--secondary);
-}
-
-/* ================= MEMBERS ================= */
-#members.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-}
-
-#members.list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.member-card {
-  background-color: var(--card-bg);
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-.member-logo {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.member-logo img {
-  max-width: 140px;
-  display: block;
-  margin: auto;
-}
-
-.member-info h3 {
-  margin-bottom: 0.5rem;
-}
-
-.member-description {
-  margin-bottom: 0.75rem;
-  color: var(--text-muted);
-}
-
-.member-info p {
-  margin-bottom: 0.3rem;
-}
-
-.member-info a {
-  color: var(--secondary);
-  text-decoration: none;
-}
-
-.member-info a:hover {
-  text-decoration: underline;
-}
-
-/* ================= INFO SECTIONS ================= */
-.info-section {
-  background-color: #ffffff;
-  padding: 2rem 1rem;
-  margin: 2rem auto;
-  max-width: 900px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-/* ================= FOOTER ================= */
 footer {
-  background-color: var(--primary);
-  color: #ffffff;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:1rem;
 }

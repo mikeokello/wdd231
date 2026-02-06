@@ -1,53 +1,23 @@
-@media (min-width: 768px) {
+@media (min-width:768px) {
 
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  #menu {
-    display: none;
-  }
+  #menu { display:none; }
 
   .navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 0.5rem;
-  }
-
-  .navigation li {
-    border: none;
-  }
-
-  .navigation a {
-    padding: 0.75rem 1.2rem;
-  }
-
-  .hero {
-    height: 380px;
-  }
-
-  .hero-text h2 {
-    font-size: 2rem;
+    display:flex;
+    gap:1rem;
+    background:none;
   }
 
   main {
-    max-width: 1200px;
-    margin: auto;
+    max-width:1200px;
+    margin:auto;
   }
 
-  #members.grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  .grid {
+    grid-template-columns:repeat(3,1fr);
   }
 
-  #members.list .member-card {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  #members.list .member-logo {
-    margin-bottom: 0;
-    flex-shrink: 0;
+  .discover-grid {
+    grid-template-columns:repeat(4,1fr);
   }
 }

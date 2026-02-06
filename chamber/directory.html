@@ -3,239 +3,99 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Directory | Kampala Chamber</title>
 
-  <title>Kampala Chamber of Commerce | Directory</title>
-
-  <!-- Primary Meta -->
-  <meta name="description" content="Business member directory for the Kampala Chamber of Commerce. Connecting businesses, strengthening partnerships, and driving growth.">
-  <meta name="author" content="George Mike Okello">
-
-  <!-- Social Media Meta (Open Graph / Meta) -->
-  <meta property="og:title" content="Kampala Chamber of Commerce | Business Directory">
-  <meta property="og:description" content="Explore trusted business members of the Kampala Chamber of Commerce and discover opportunities for growth and collaboration.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://kampalachamber.org/directory.html">
-  <meta property="og:image" content="https://kampalachamber.org/images/hero.webp">
-
-  <!-- Twitter / X Meta -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Kampala Chamber of Commerce | Business Directory">
-  <meta name="twitter:description" content="Discover reputable businesses and partners within the Kampala Chamber of Commerce.">
-  <meta name="twitter:image" content="https://kampalachamber.org/images/hero.webp">
-
-  <!-- Favicon -->
   <link rel="icon" href="images/faviacon.webp">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 
-  <!-- JavaScript -->
+  <script src="scripts/main.js" defer></script>
   <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
 
-<header>
-  <h1>Kampala Chamber of Commerce</h1>
+<header class="site-header">
+  <h1>Kampala Chamber</h1>
   <nav>
-    <button id="menu" aria-label="Open navigation menu"></button>
+    <button id="menu" aria-label="Menu">&#9776;</button>
     <ul class="navigation">
       <li><a href="index.html">Home</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li><a href="#discover">Discover</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="directory.html" class="active">Directory</a></li>
+      <li><a href="discover.html">Discover</a></li>
     </ul>
   </nav>
 </header>
 
-
-<!-- ================= HERO ================= -->
-<section id="home" class="hero">
-  <img src="images/hero.webp" alt="Kampala city business district" class="hero-image">
-  <div class="hero-text">
-    <h2>Welcome to Kampala Chamber of Commerce</h2>
-    <p>Connecting businesses, strengthening partnerships, and driving growth.</p>
-  </div>
-</section>
-
 <main>
 
-  <!-- ================= DIRECTORY CONTROLS ================= -->
-  <section id="directory" class="view-controls">
-    <h2>Business Member Directory</h2>
-    <p>
-      Discover reputable businesses that are active members of the Kampala
-      Chamber of Commerce. Each organization listed below contributes to
-      economic growth, innovation, and community development.
-    </p>
-
+  <!-- VIEW CONTROLS -->
+  <section class="view-controls">
+    <h2>Our Members</h2>
     <div class="view-buttons">
-      <button id="grid">Grid View</button>
-      <button id="list">List View</button>
+      <button id="grid">Grid</button>
+      <button id="list">List</button>
     </div>
   </section>
 
-  <!-- ================= MEMBERS ================= -->
+  <!-- MEMBERS GRID -->
   <section id="members" class="grid">
 
-    <section class="member-card">
-      <div class="member-logo">
-        <img src="images/alpha.webp" alt="Alpha Traders Ltd logo">
-      </div>
-      <div class="member-info">
-        <h3>Alpha Traders Ltd</h3>
-        <p class="member-description">
-          Alpha Traders Ltd is a well-established company specializing in
-          wholesale and retail distribution, committed to providing dependable
-          products and excellent customer service across the region.
-        </p>
-        <p><strong>Address:</strong> Kampala Road, Kampala</p>
-        <p><strong>Phone:</strong> +256 701 111111</p>
-        <p><strong>Email:</strong> info@alphatraders.com</p>
-        <p><strong>Website:</strong> <a href="https://alphatraders.com" target="_blank" rel="noopener">alphatraders.com</a></p>
-        <p><strong>Membership Level:</strong> Gold</p>
-      </div>
+    <section class="member-card card">
+      <img src="images/alpha.webp" alt="Alpha Traders Ltd">
+      <h3>Alpha Traders Ltd</h3>
+      <p>Wholesale and retail distribution company.</p>
+      <p><strong>Address:</strong> Kampala Road</p>
     </section>
 
-    <section class="member-card">
-      <div class="member-logo">
-        <img src="images/bright.webp" alt="Bright Tech Solutions logo">
-      </div>
-      <div class="member-info">
-        <h3>Bright Tech Solutions</h3>
-        <p class="member-description">
-          Bright Tech Solutions delivers modern technology services and digital
-          solutions designed to improve efficiency, innovation, and business
-          performance for organizations of all sizes.
-        </p>
-        <p><strong>Address:</strong> Ntinda, Kampala</p>
-        <p><strong>Phone:</strong> +256 702 222222</p>
-        <p><strong>Email:</strong> contact@brighttech.com</p>
-        <p><strong>Website:</strong> <a href="https://brighttech.com" target="_blank" rel="noopener">brighttech.com</a></p>
-        <p><strong>Membership Level:</strong> Silver</p>
-      </div>
+    <section class="member-card card">
+      <img src="images/bright.webp" alt="Bright Tech Solutions">
+      <h3>Bright Tech Solutions</h3>
+      <p>Modern IT and digital solutions provider.</p>
+      <p><strong>Address:</strong> Ntinda</p>
     </section>
 
-    <section class="member-card">
-      <div class="member-logo">
-        <img src="images/city fresh food.webp" alt="City Fresh Foods logo">
-      </div>
-      <div class="member-info">
-        <h3>City Fresh Foods</h3>
-        <p class="member-description">
-          City Fresh Foods focuses on supplying high-quality, fresh food
-          products while maintaining strict standards in sourcing, hygiene,
-          and customer satisfaction.
-        </p>
-        <p><strong>Address:</strong> Wandegeya, Kampala</p>
-        <p><strong>Phone:</strong> +256 703 333333</p>
-        <p><strong>Email:</strong> sales@cityfresh.com</p>
-        <p><strong>Website:</strong> <a href="https://cityfresh.com" target="_blank" rel="noopener">cityfresh.com</a></p>
-        <p><strong>Membership Level:</strong> Member</p>
-      </div>
+    <section class="member-card card">
+      <img src="images/city.webp" alt="City Fresh Foods">
+      <h3>City Fresh Foods</h3>
+      <p>Supplier of fresh and organic food products.</p>
+      <p><strong>Address:</strong> Wandegeya</p>
     </section>
 
-    <section class="member-card">
-      <div class="member-logo">
-        <img src="images/delta.webp" alt="Delta Construction logo">
-      </div>
-      <div class="member-info">
-        <h3>Delta Construction</h3>
-        <p class="member-description">
-          Delta Construction provides reliable building and infrastructure
-          services, supporting sustainable development through quality
-          workmanship and professional project management.
-        </p>
-        <p><strong>Address:</strong> Makindye, Kampala</p>
-        <p><strong>Phone:</strong> +256 704 444444</p>
-        <p><strong>Email:</strong> info@deltaconstruction.com</p>
-        <p><strong>Website:</strong> <a href="https://deltaconstruction.com" target="_blank" rel="noopener">deltaconstruction.com</a></p>
-        <p><strong>Membership Level:</strong> Gold</p>
-      </div>
+    <section class="member-card card">
+      <img src="images/delta.webp" alt="Delta Construction">
+      <h3>Delta Construction</h3>
+      <p>Professional construction and infrastructure services.</p>
+      <p><strong>Address:</strong> Makindye</p>
     </section>
 
-    <section class="member-card">
-      <div class="member-logo">
-        <img src="images/eco.webp" alt="Eco Green Energy logo">
-      </div>
-      <div class="member-info">
-        <h3>Eco Green Energy</h3>
-        <p class="member-description">
-          Eco Green Energy specializes in renewable energy solutions aimed at
-          promoting environmental responsibility and providing sustainable
-          power alternatives for businesses and communities.
-        </p>
-        <p><strong>Address:</strong> Najjera, Kampala</p>
-        <p><strong>Phone:</strong> +256 705 555555</p>
-        <p><strong>Email:</strong> support@ecogreen.com</p>
-        <p><strong>Website:</strong> <a href="https://ecogreen.com" target="_blank" rel="noopener">ecogreen.com</a></p>
-        <p><strong>Membership Level:</strong> Silver</p>
-      </div>
+    <section class="member-card card">
+      <img src="images/eco.webp" alt="Eco Green Energy">
+      <h3>Eco Green Energy</h3>
+      <p>Renewable energy and sustainability solutions.</p>
+      <p><strong>Address:</strong> Najjera</p>
     </section>
 
-    <section class="member-card">
-      <div class="member-logo">
-        <img src="images/future.webp" alt="Future Finance Ltd logo">
-      </div>
-      <div class="member-info">
-        <h3>Future Finance Ltd</h3>
-        <p class="member-description">
-          Future Finance Ltd offers professional financial services and advisory
-          solutions designed to help individuals and businesses achieve long-term
-          financial stability and growth.
-        </p>
-        <p><strong>Address:</strong> Kololo, Kampala</p>
-        <p><strong>Phone:</strong> +256 706 666666</p>
-        <p><strong>Email:</strong> info@futurefinance.com</p>
-        <p><strong>Website:</strong> <a href="https://futurefinance.com" target="_blank" rel="noopener">futurefinance.com</a></p>
-        <p><strong>Membership Level:</strong> Member</p>
-      </div>
+    <section class="member-card card">
+      <img src="images/future.webp" alt="Future Finance Ltd">
+      <h3>Future Finance Ltd</h3>
+      <p>Financial advisory and investment services.</p>
+      <p><strong>Address:</strong> Kololo</p>
     </section>
 
-    <section class="member-card">
-      <div class="member-logo">
-        <img src="images/global.webp" alt="Global Logistics logo">
-      </div>
-      <div class="member-info">
-        <h3>Global Logistics</h3>
-        <p class="member-description">
-          Global Logistics delivers efficient transportation and supply chain
-          solutions, ensuring timely delivery and dependable logistics support
-          for regional and international trade.
-        </p>
-        <p><strong>Address:</strong> Industrial Area, Kampala</p>
-        <p><strong>Phone:</strong> +256 707 777777</p>
-        <p><strong>Email:</strong> logistics@globallogistics.com</p>
-        <p><strong>Website:</strong> <a href="https://globallogistics.com" target="_blank" rel="noopener">globallogistics.com</a></p>
-        <p><strong>Membership Level:</strong> Gold</p>
-      </div>
+    <section class="member-card card">
+      <img src="images/global.webp" alt="Global Logistics">
+      <h3>Global Logistics</h3>
+      <p>International freight and supply chain management.</p>
+      <p><strong>Address:</strong> Industrial Area</p>
     </section>
 
   </section>
 
 </main>
 
-<section id="discover" class="info-section">
-  <h2>Discover Kampala Business Community</h2>
-  <p>
-    Learn more about opportunities, partnerships, and resources available
-    through the Kampala Chamber of Commerce.
-  </p>
-</section>
-
-<section id="contact" class="info-section">
-  <h2>Contact Us</h2>
-  <p>Email: info@kampalachamber.org</p>
-  <p>Phone: +256 700 000000</p>
-</section>
-
 <footer>
-  <p>Contact: info@kampalachamber.org | +256 700 000000</p>
-  <p>
-    © <span id="year"></span> Kampala Chamber of Commerce |
-    George Mike Okello | WDD 231
-  </p>
+  <p>© <span id="year"></span> Kampala Chamber</p>
   <p>Last Modified: <span id="lastModified"></span></p>
 </footer>
 

@@ -1,14 +1,13 @@
-/* GRID / LIST VIEW */
-const gridButton = document.querySelector("#grid");
-const listButton = document.querySelector("#list");
-const membersContainer = document.querySelector("#members");
+async function loadMembers() {
+  const res = await fetch("data/members.json");
+  const data = await res.json();
+  const container = document.querySelector("#members");
 
-gridButton.addEventListener("click", () => {
-  membersContainer.classList.add("grid");
-  membersContainer.classList.remove("list");
-});
-
-listButton.addEventListener("click", () => {
-  membersContainer.classList.add("list");
-  membersContainer.classList.remove("grid");
-});
+  container.innerHTML = data.members.map(m => `
+    <section class="card">
+      <h3>${m.name}</h3>
+      <img src="images/${m.image}" alt="${m.name}">
+      <p>${m.address}</p>
+    </section>`).join("");
+}
+loadMembers();
