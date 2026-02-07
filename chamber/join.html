@@ -3,169 +3,122 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Join the Chamber | Kampala Chamber of Commerce</title>
 
-  <meta name="description" content="Apply to become a member of the Kampala Chamber of Commerce.">
-  <meta name="author" content="George Mike Okello">
+  <title>Join | Kampala Chamber of Commerce</title>
 
+  <!-- META DATA -->
+  <meta name="description" content="Join the Kampala Chamber of Commerce to grow your business, connect with partners, and access valuable resources.">
+  <meta name="author" content="Mike Okello">
+
+  <!-- OPEN GRAPH META TAGS -->
+  <meta property="og:title" content="Join | Kampala Chamber of Commerce">
+  <meta property="og:description" content="Become a member of the Kampala Chamber of Commerce and strengthen your business through networking and advocacy.">
+  <meta property="og:image" content="https://mikeokello.github.io/wdd231/chamber/images/hero.webp">
+  <meta property="og:url" content="https://mikeokello.github.io/wdd231/chamber/join.html">
+  <meta property="og:type" content="website">
+
+  <!-- FAVICON -->
   <link rel="icon" href="images/faviacon.webp">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- STYLES -->
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 
+  <!-- SCRIPTS -->
   <script src="scripts/main.js" defer></script>
-  <script src="scripts/join.js" defer></script>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
 <header class="site-header">
-  <div class="header-inner">
-    <h1>Kampala Chamber</h1>
+  <h1>Kampala Chamber</h1>
 
-    <nav>
-      <button id="menu" aria-label="Toggle Navigation">&#9776;</button>
-      <ul class="navigation">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="discover.html">Discover</a></li>
-        <li><a href="join.html" class="active">Join</a></li>
-      </ul>
-    </nav>
-  </div>
+  <nav>
+    <button id="menu" aria-label="Toggle Menu">&#9776;</button>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="join.html" class="active">Join</a></li>
+    </ul>
+  </nav>
 </header>
 
-<!-- ================= MAIN ================= -->
-<main class="join-layout">
+<section class="hero">
+  <img src="images/hero.webp" alt="A scenic view of Kampala city">
+  <div class="hero-text">
+    <h2>Join the Chamber</h2>
+  </div>
+</section>
 
-  <!-- ===== FORM SECTION ===== -->
-  <section class="card form-card">
-    <h2>Membership Application</h2>
-    <p>Please complete the form below to apply for chamber membership.</p>
+<main>
 
-    <form method="get" action="thankyou.html">
+  <h1>Join Kampala Chamber of Commerce</h1>
 
-      <label>
-        First Name
-        <input type="text" name="fname" title="First Name" required autocomplete="given-name">
-      </label>
+  <section class="join-layout">
 
-      <label>
-        Last Name
-        <input type="text" name="lname" title="Last Name" required autocomplete="family-name">
-      </label>
+    <!-- MEMBERSHIP FORM -->
+    <form method="get" action="thankyou.html" class="card">
 
-      <label>
-        Organizational Title
-        <input type="text"
-               name="orgtitle"
-               title="Organizational Title"
-               autocomplete="organization-title"
-               pattern="[A-Za-z\s\-]{7,}">
-      </label>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname" required>
 
-      <label>
-        Email Address
-        <input type="email"
-               name="email"
-               title="Email Address"
-               placeholder="example@email.com"
-               required
-               autocomplete="email">
-      </label>
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lname" required>
 
-      <label>
-        Mobile Phone
-        <input type="tel"
-               name="phone"
-               title="Mobile Phone Number"
-               required
-               autocomplete="tel">
-      </label>
+      <label for="title">Organization Title</label>
+      <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}" title="Minimum 7 characters, letters, spaces, and hyphens only">
 
-      <label>
-        Business / Organization Name
-        <input type="text"
-               name="business"
-               title="Business Name"
-               required
-               autocomplete="organization">
-      </label>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com" required>
 
-      <label>
-        Membership Level
-        <select name="membership" title="Membership Level" required>
-          <option value="">Select a membership level</option>
-          <option value="np">NP Membership</option>
-          <option value="bronze">Bronze Membership</option>
-          <option value="silver">Silver Membership</option>
-          <option value="gold">Gold Membership</option>
-        </select>
-      </label>
+      <label for="phone">Mobile Phone</label>
+      <input type="tel" id="phone" name="phone" required>
 
-      <label>
-        Business Description
-        <textarea name="description" title="Business Description"></textarea>
-      </label>
+      <label for="organization">Organization Name</label>
+      <input type="text" id="organization" name="organization" required>
 
-      <!-- Hidden Timestamp -->
-      <input type="hidden" id="timestamp" name="timestamp">
+      <label for="membership">Membership Level</label>
+      <select id="membership" name="membership" required>
+        <option value="">Select a membership level</option>
+        <option value="np">NP Membership (Non-Profit)</option>
+        <option value="bronze">Bronze Membership</option>
+        <option value="silver">Silver Membership</option>
+        <option value="gold">Gold Membership</option>
+      </select>
 
-      <input type="submit" value="Apply for Membership">
+      <label for="description">Organization Description</label>
+      <textarea id="description" name="description"></textarea>
+
+      <!-- TIMESTAMP -->
+      <input type="hidden" name="timestamp" value="2026-02-07T00:00:00Z">
+
+      <button type="submit">Submit Application</button>
+
     </form>
+
+    <!-- MEMBERSHIP LEVEL INFORMATION -->
+    <aside class="card">
+      <h2>Membership Benefits</h2>
+
+      <p><strong>NP Membership:</strong> Free membership for registered non-profit organizations.</p>
+      <p><strong>Bronze:</strong> Basic business exposure and networking opportunities.</p>
+      <p><strong>Silver:</strong> Event discounts, training access, and directory spotlight.</p>
+      <p><strong>Gold:</strong> Premium promotion, leadership opportunities, and sponsorship benefits.</p>
+    </aside>
+
   </section>
 
-  <!-- ===== MEMBERSHIP LEVEL CARDS ===== -->
-<aside class="membership-cards">
-
-  <!-- NP Membership -->
-  <section class="card level fade-in">
-    <div class="membership-img">
-      <img src="images/np.webp" alt="NP Membership">
-    </div>
-    <h3>NP Membership</h3>
-    <p>No-cost membership for nonprofit organizations.</p>
-    <button type="button" data-modal="npModal">View Benefits</button>
-  </section>
-
-  <!-- Bronze Membership -->
-  <section class="card level fade-in">
-    <div class="membership-img">
-      <img src="images/bronze.webp" alt="Bronze Membership">
-    </div>
-    <h3>Bronze Membership</h3>
-    <p>Basic visibility and networking opportunities.</p>
-    <button type="button" data-modal="bronzeModal">View Benefits</button>
-  </section>
-
-  <!-- Silver Membership -->
-  <section class="card level fade-in">
-    <div class="membership-img">
-      <img src="images/silver.webp" alt="Silver Membership">
-    </div>
-    <h3>Silver Membership</h3>
-    <p>Enhanced promotion and training benefits.</p>
-    <button type="button" data-modal="silverModal">View Benefits</button>
-  </section>
-
-  <!-- Gold Membership -->
-  <section class="card level fade-in">
-    <div class="membership-img">
-      <img src="images/gold.webp" alt="Gold Membership">
-    </div>
-    <h3>Gold Membership</h3>
-    <p>Premium exposure and advertising opportunities.</p>
-    <button type="button" data-modal="goldModal">View Benefits</button>
-  </section>
-</aside>
 </main>
 
-<!-- ================= FOOTER ================= -->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <p>© <span id="year"></span> Kampala Chamber of Commerce</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
-  </div>
+<footer>
+  <p>© <span id="year"></span> Kampala Chamber of Commerce</p>
+  <p>Last Modified: <span id="lastModified"></span></p>
 </footer>
 
 </body>
