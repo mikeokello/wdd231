@@ -3,33 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discover Kampala</title>
 
+  <title>Discover Kampala | Kampala Chamber of Commerce</title>
+
+  <!-- META DATA -->
+  <meta name="description" content="Discover Kampala through culture, history, and business attractions supported by the Kampala Chamber of Commerce.">
+  <meta name="author" content="Mike Okello">
+
+  <!-- OPEN GRAPH META TAGS -->
+  <meta property="og:title" content="Discover Kampala | Kampala Chamber of Commerce">
+  <meta property="og:description" content="Explore Kampala’s cultural landmarks, markets, and historic sites with insights from the Kampala Chamber of Commerce.">
+  <meta property="og:image" content="https://mikeokello.github.io/wdd231/chamber/images/hero.webp">
+  <meta property="og:url" content="https://mikeokello.github.io/wdd231/chamber/discover.html">
+  <meta property="og:type" content="website">
+
+  <!-- FAVICON -->
   <link rel="icon" href="images/faviacon.webp">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- STYLES -->
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 
+  <!-- SCRIPTS -->
   <script src="scripts/main.js" defer></script>
   <script type="module" src="scripts/discover.js"></script>
 </head>
 
 <body>
+
 <header class="site-header">
   <h1>Kampala Chamber</h1>
-  <nav>
-  <button id="menu" aria-label="Toggle Menu">&#9776;</button>
-  <ul class="navigation">
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="directory.html">Directory</a></li>
-    <li><a href="discover.html">Discover</a></li>
-    <li><a href="join.html">Join</a></li>
-  </ul>
-</nav>
 
+  <nav>
+    <button id="menu" aria-label="Toggle Menu">&#9776;</button>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="discover.html" class="active">Discover</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
 </header>
 
 <section class="hero">
-  <img src="images/hero.webp" alt="Discover Kampala">
+  <img src="images/hero.webp" alt="A scenic view of Kampala city">
   <div class="hero-text">
     <h2>Discover Kampala</h2>
   </div>
@@ -37,80 +59,82 @@
 
 <main>
 
-<section id="visit-message" class="info-section card"></section>
+  <section id="visit-message" class="info-section card"></section>
 
-<section class="discover-grid">
+  <section class="discover-grid">
 
-  <section class="discover-card card area-one">
-    <h2>Kasubi Tombs</h2>
-    <img src="images/kasubi.jpg" alt="Kasubi Tombs">
-    <address>Kasubi, Kampala</address>
-    <p>UNESCO World Heritage site and royal burial grounds.</p>
-    <button>Learn More</button>
+    <section class="discover-card card area-one">
+      <h2>Kasubi Tombs</h2>
+      <img src="images/kasubi.jpg" alt="Kasubi Tombs royal burial site">
+      <address>Kasubi, Kampala</address>
+      <p>UNESCO World Heritage site and royal burial grounds of the Buganda kings.</p>
+      <button>Learn More</button>
+    </section>
+
+    <section class="discover-card card area-two">
+      <h2>Lake Victoria</h2>
+      <img src="images/lake.jpg" alt="Lake Victoria shoreline">
+      <address>Entebbe Road</address>
+      <p>Africa’s largest lake supporting fishing, tourism, and regional trade.</p>
+      <button>Learn More</button>
+    </section>
+
+    <section class="discover-card card area-three">
+      <h2>Ndere Cultural Centre</h2>
+      <img src="images/ndere.jpg" alt="Ndere Cultural Centre performance">
+      <address>Ntinda</address>
+      <p>Celebrates Uganda’s diverse cultures through music, dance, and storytelling.</p>
+      <button>Learn More</button>
+    </section>
+
+    <section class="discover-card card area-four">
+      <h2>Uganda Museum</h2>
+      <img src="images/uganga.jpg" alt="Uganda Museum exterior">
+      <address>Kira Road</address>
+      <p>The oldest museum in East Africa showcasing Uganda’s heritage.</p>
+      <button>Learn More</button>
+    </section>
+
+    <section class="discover-card card area-five">
+      <h2>Owino Market</h2>
+      <img src="images/owino.jpg" alt="Owino Market stalls">
+      <address>Downtown Kampala</address>
+      <p>The busiest open-air market and commercial hub in Uganda.</p>
+      <button>Learn More</button>
+    </section>
+
+    <section class="discover-card card area-six">
+      <h2>Namugongo Shrine</h2>
+      <img src="images/namugongo.jpg" alt="Namugongo Martyrs Shrine">
+      <address>Namugongo</address>
+      <p>A major pilgrimage site honoring Uganda’s Christian martyrs.</p>
+      <button>Learn More</button>
+    </section>
+
+    <section class="discover-card card area-seven">
+      <h2>Kololo Grounds</h2>
+      <img src="images/kololo.jpg" alt="Kololo Independence Grounds">
+      <address>Kololo</address>
+      <p>Historic venue for national celebrations and public events.</p>
+      <button>Learn More</button>
+    </section>
+
+    <section class="discover-card card area-eight">
+      <h2>Kabaka’s Palace</h2>
+      <img src="images/kabaka.jpg" alt="Kabaka’s Palace in Mengo">
+      <address>Mengo</address>
+      <p>The official residence of the King of Buganda and cultural landmark.</p>
+      <button>Learn More</button>
+    </section>
+
   </section>
-
-  <section class="discover-card card area-two">
-    <h2>Lake Victoria</h2>
-    <img src="images/lake.jpg" alt="Lake Victoria">
-    <address>Entebbe Road</address>
-    <p>Africa’s largest lake supporting trade and tourism.</p>
-    <button>Learn More</button>
-  </section>
-
-  <section class="discover-card card area-three">
-    <h2>Ndere Cultural Centre</h2>
-    <img src="images/ndere.jpg" alt="Ndere Cultural Centre">
-    <address>Ntinda</address>
-    <p>Traditional music, dance, and cultural performances.</p>
-    <button>Learn More</button>
-  </section>
-
-  <section class="discover-card card area-four">
-    <h2>Uganda Museum</h2>
-    <img src="images/uganga.jpg" alt="Uganda Museum">
-    <address>Kira Road</address>
-    <p>The oldest museum in East Africa.</p>
-    <button>Learn More</button>
-  </section>
-
-  <section class="discover-card card area-five">
-    <h2>Owino Market</h2>
-    <img src="images/owino.jpg" alt="Owino Market">
-    <address>Downtown Kampala</address>
-    <p>The busiest commercial market in Uganda.</p>
-    <button>Learn More</button>
-  </section>
-
-  <section class="discover-card card area-six">
-    <h2>Namugongo Shrine</h2>
-    <img src="images/namugongo.jpg" alt="Namugongo Shrine">
-    <address>Namugongo</address>
-    <p>Religious site honoring Uganda’s martyrs.</p>
-    <button>Learn More</button>
-  </section>
-
-  <section class="discover-card card area-seven">
-    <h2>Kololo Grounds</h2>
-    <img src="images/kololo.jpg" alt="Kololo Grounds">
-    <address>Kololo</address>
-    <p>National celebrations and historic ceremonies.</p>
-    <button>Learn More</button>
-  </section>
-
-  <section class="discover-card card area-eight">
-    <h2>Kabaka’s Palace</h2>
-    <img src="images/kabaka.jpg" alt="Kabaka’s Palace">
-    <address>Mengo</address>
-    <p>Official residence of the King of Buganda.</p>
-    <button>Learn More</button>
-  </section>
-
-</section>
 
 </main>
+
 <footer>
-  <p>© <span id="year"></span> Kampala Chamber</p>
+  <p>© <span id="year"></span> Kampala Chamber of Commerce</p>
   <p>Last Modified: <span id="lastModified"></span></p>
 </footer>
+
 </body>
 </html>
