@@ -51,7 +51,6 @@
 
 <main>
 
-  <!-- REQUIRED: SINGLE H1 INSIDE MAIN -->
   <h1>Join Kampala Chamber of Commerce</h1>
 
   <section class="join-layout">
@@ -59,10 +58,20 @@
     <form method="get" action="thankyou.html" class="card">
 
       <label for="fname">First Name</label>
-      <input type="text" id="fname" name="fname" autocomplete="given-name" required>
+      <input type="text"
+             id="fname"
+             name="fname"
+             autocomplete="given-name"
+             title="Enter your first name"
+             required>
 
       <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lname" autocomplete="family-name" required>
+      <input type="text"
+             id="lname"
+             name="lname"
+             autocomplete="family-name"
+             title="Enter your last name"
+             required>
 
       <label for="orgtitle">Organization Title</label>
       <input type="text"
@@ -77,6 +86,7 @@
              id="email"
              name="email"
              autocomplete="email"
+             placeholder="name@example.com"
              title="Enter a valid email address"
              required>
 
@@ -93,6 +103,7 @@
              id="organization"
              name="organization"
              autocomplete="organization"
+             title="Enter the name of your organization"
              required>
 
       <label for="membership">Membership Level</label>
@@ -109,7 +120,6 @@
                 name="description"
                 title="Brief description of your organization"></textarea>
 
-      <!-- REQUIRED TIMESTAMP -->
       <input type="hidden" id="timestamp" name="timestamp">
 
       <button type="submit">Submit Application</button>
