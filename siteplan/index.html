@@ -2,87 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Site plan document for the WDD 231 individual website project.">
-  <meta name="author" content="Mike Okello">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Individual Website Project Site Plan</title>
-  <link rel="stylesheet" href="styles/siteplan.css">
+
+  <meta name="description" content="This site plan outlines the purpose, design, structure, and styling for the WDD 231 individual website project.">
+  <meta name="author" content="Mike Okello">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="WDD 231 Individual Website Project Site Plan">
+  <meta property="og:description" content="A structured site plan detailing goals, audience scenarios, color scheme, typography, and wireframes.">
+  <meta property="og:image" content="https://mikeokello.github.io/wdd231/siteplan/images/wireframe.png">
+  <meta property="og:url" content="https://mikeokello.github.io/wdd231/siteplan/index.html">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+
+  <!-- JavaScript -->
+  <script src="scripts/siteplan.js" defer></script>
 </head>
 
 <body>
   <header>
     <h1>Individual Website Project Site Plan</h1>
-    <p>WDD 231 – Web Frontend Development</p>
+    <nav>
+      <ul>
+        <li><a href="#site-name">Site Name</a></li>
+        <li><a href="#purpose">Purpose</a></li>
+        <li><a href="#scenarios">Scenarios</a></li>
+        <li><a href="#design">Design</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section>
+    <section id="site-name">
       <h2>Site Name</h2>
       <p><strong>Explore Uganda</strong></p>
       <p>
-        The site name was selected because it clearly represents a website
-        dedicated to showcasing tourist destinations, culture, and travel
-        experiences within Uganda.
+        The name was selected because it clearly communicates a tourism-focused
+        website showcasing Uganda’s destinations, culture, and travel experiences.
       </p>
       <p><em>Optional domain:</em> explore-uganda.org</p>
     </section>
 
-    <section>
+    <section id="purpose">
       <h2>Site Purpose</h2>
       <p>
-        The purpose of this website is to provide visitors with information
-        about popular tourist destinations in Uganda, cultural highlights,
-        travel tips, and recommended activities for both local and international
-        travelers.
+        This website will provide information about Uganda’s tourist attractions,
+        cultural heritage, travel tips, and activity recommendations for visitors.
       </p>
     </section>
 
-    <section>
+    <section id="scenarios">
       <h2>Scenarios</h2>
       <ul>
-        <li>What are the top tourist attractions to visit in Uganda?</li>
-        <li>Where can I find travel tips and cultural information before visiting Uganda?</li>
+        <li>What are the top tourist destinations to visit in Uganda?</li>
+        <li>How can I prepare culturally and practically before traveling to Uganda?</li>
       </ul>
     </section>
 
-    <section>
+    <section id="design">
       <h2>Color Scheme</h2>
-      <p>
-        <strong>Primary Color:</strong> Dark Green (#1b5e20) – used for headings and navigation.
-      </p>
-      <p>
-        <strong>Secondary Color:</strong> Light Beige (#f5f5dc) – used for background areas.
-      </p>
-    </section>
+      <p><strong>Dark Green (#1b5e20):</strong> headings, navigation, footer</p>
+      <p><strong>Light Beige (#f5f5dc):</strong> page background</p>
 
-    <section>
       <h2>Typography</h2>
-      <p>
-        <strong>Heading Font:</strong> Arial, sans-serif – used for all headings.
-      </p>
-      <p>
-        <strong>Body Font:</strong> Verdana, sans-serif – used for paragraph text.
-      </p>
-    </section>
+      <p><strong>Montserrat:</strong> headings</p>
+      <p><strong>Roboto:</strong> body text</p>
 
-    <section>
       <h2>Wireframe</h2>
-
-      <h3>Mobile View</h3>
-      <ul>
-        <li>Header with logo and navigation</li>
-        <li>Main featured image</li>
-        <li>Content sections stacked vertically</li>
-        <li>Footer with contact and links</li>
-      </ul>
-
-      <h3>Desktop View</h3>
-      <ul>
-        <li>Header with logo and horizontal navigation</li>
-        <li>Main content displayed in multiple columns</li>
-        <li>Featured sections highlighted</li>
-        <li>Footer across the bottom of the page</li>
-      </ul>
+      <img src="images/wireframe.png" alt="Homepage wireframe layout for mobile and desktop views">
     </section>
   </main>
 
