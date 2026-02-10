@@ -8,7 +8,7 @@ body {
 .site-header,
 .site-footer {
   background-color: #004d40;
-  color: #ffffff;
+  color: #fff;
   padding: 1rem 1.5rem;
   display: flex;
   align-items: center;
@@ -17,23 +17,22 @@ body {
 
 .site-header h1 {
   margin: 0;
-  font-size: 1.5rem;
 }
 
 .site-header nav a,
 .site-footer nav a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   margin-left: 1rem;
 }
 
 #menuBtn {
-  display: none;
-  font-size: 1.5rem;
   background: none;
   border: none;
-  color: #ffffff;
+  font-size: 1.5rem;
+  color: #fff;
   cursor: pointer;
+  display: none;
 }
 
 .hero {
@@ -44,10 +43,21 @@ body {
 
 .hero img {
   width: 100%;
-  height: auto;
   border-radius: 8px;
 }
 
 .hero-content {
   padding: 1rem;
+}
+
+.place-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.place-card img {
+  width: 100%;
+  border-radius: 6px;
 }

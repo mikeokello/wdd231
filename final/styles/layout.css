@@ -1,3 +1,12 @@
+.places-grid {
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
 @media (max-width: 768px) {
   #menuBtn {
     display: block;
@@ -5,12 +14,11 @@
 
   #navMenu {
     display: none;
-    flex-direction: column;
-    background-color: #004d40;
     position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
+    top: 70px;
+    right: 1rem;
+    background-color: #004d40;
+    flex-direction: column;
     padding: 1rem;
   }
 
