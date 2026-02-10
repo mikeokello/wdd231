@@ -1,71 +1,53 @@
 body {
+  font-family: 'Montserrat', Arial, sans-serif;
   margin: 0;
-  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
 .site-header,
 .site-footer {
   background-color: #004d40;
   color: #ffffff;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.site-header h1,
-.site-footer p {
+.site-header h1 {
   margin: 0;
+  font-size: 1.5rem;
+}
+
+.site-header nav a,
+.site-footer nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 1rem;
 }
 
 #menuBtn {
+  display: none;
   font-size: 1.5rem;
   background: none;
   border: none;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
 }
 
-nav {
-  display: flex;
-  gap: 1rem;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-@media (max-width: 700px) {
-  nav {
-    display: none;
-    flex-direction: column;
-  }
-  nav.open {
-    display: flex;
-  }
+.hero {
+  max-width: 1200px;
+  margin: 2rem auto;
+  text-align: center;
 }
 
 .hero img {
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
-.places-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.5rem;
+.hero-content {
   padding: 1rem;
-}
-
-.place-card {
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 1rem;
-  text-align: center;
-}
-
-.place-card img {
-  width: 100%;
-  height: auto;
 }

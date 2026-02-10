@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+  #menuBtn {
+    display: block;
+  }
+
+  #navMenu {
+    display: none;
+    flex-direction: column;
+    background-color: #004d40;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+  }
+
+  #navMenu.open {
+    display: flex;
+  }
+
+  #navMenu a {
+    margin: 0.5rem 0;
+  }
+}
