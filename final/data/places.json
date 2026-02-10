@@ -1,0 +1,17 @@
+[
+  {"name":"Bwindi","region":"Southwest","type":"Forest","rating":5},
+  {"name":"Murchison Falls","region":"North","type":"Waterfall","rating":5},
+  {"name":"Queen Elizabeth","region":"West","type":"Park","rating":4},
+  {"name":"Lake Victoria","region":"Central","type":"Lake","rating":4},
+  {"name":"Mount Elgon","region":"East","type":"Mountain","rating":4},
+  {"name":"Kidepo Valley","region":"North","type":"Park","rating":5},
+  {"name":"Jinja","region":"East","type":"City","rating":4},
+  {"name":"Ssese Islands","region":"Central","type":"Island","rating":4},
+  {"name":"Mgahinga","region":"Southwest","type":"Park","rating":4},
+  {"name":"Rwenzori","region":"West","type":"Mountain","rating":5},
+  {"name":"Kampala","region":"Central","type":"City","rating":3},
+  {"name":"Lake Bunyonyi","region":"West","type":"Lake","rating":5},
+  {"name":"Ziwa Rhino","region":"Central","type":"Sanctuary","rating":4},
+  {"name":"Semuliki","region":"West","type":"Park","rating":4},
+  {"name":"Sipi Falls","region":"East","type":"Waterfall","rating":5}
+]
