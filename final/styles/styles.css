@@ -9,14 +9,10 @@ body {
 .site-footer {
   background-color: #004d40;
   color: #fff;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-
-.site-header h1 {
-  margin: 0;
+  align-items: center;
 }
 
 .site-header nav a,
@@ -26,28 +22,9 @@ body {
   margin-left: 1rem;
 }
 
-#menuBtn {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: #fff;
-  cursor: pointer;
-  display: none;
-}
-
-.hero {
-  max-width: 1200px;
-  margin: 2rem auto;
-  text-align: center;
-}
-
 .hero img {
   width: 100%;
   border-radius: 8px;
-}
-
-.hero-content {
-  padding: 1rem;
 }
 
 .place-card {
