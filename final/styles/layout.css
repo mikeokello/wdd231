@@ -11,7 +11,7 @@
   display: none;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #fff;
 }
 
@@ -23,7 +23,7 @@
   #navMenu {
     display: none;
     flex-direction: column;
-    background-color: #004d40;
+    background-color: #0b5ed7;
   }
 
   #navMenu.open {
